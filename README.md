@@ -31,6 +31,8 @@ This is a shortcut that generates a report of your Wi-Fi connection. It includes
 * MAC Address
 * Device Details (Model and iOS version)
 
+**Note:** This shortcut uses the [https://maclookup.app](https://maclookup.app) API to resolve AP vendor names based on the OUI portion of the BSSID. No BSSID or other information is being shared when calling the API.
+
 ### My Cellular
 
 This is a shortcut that generates a report of your cellular connection. It includes the following information:
