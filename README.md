@@ -42,6 +42,4 @@ This is a shortcut that generates a report of your cellular connection. It inclu
 * Signal Bars
 * Country Code
 * Is Roaming Abroad?
-* External IPv4 Address
-* External IPv6 Address
 * Device Details (Model and iOS version)
