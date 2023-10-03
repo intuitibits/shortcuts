@@ -21,17 +21,29 @@ This is a shortcut that generates a report of your Wi-Fi connection. It includes
 * Generation
 * BSSID
 * Channel number
-* RSSI
+* Band
+* Signal (RSSI)
 * Noise
-* SNR
+* Signal-to-Noise Ratio (SNR)
 * Tx and Rx Rates
 * Vendor
-* Local IPv4 Address
-* Local IPv6 Address
+* IPv4 Address (Local and external)
+* IPv6 Address (Local and external)
 * MAC Address
 * Device Details (Model and iOS version)
 
-**Note:** This shortcut uses the [https://maclookup.app](https://maclookup.app) API to resolve AP vendor names based on the OUI portion of the BSSID. No BSSID or other information is being shared when calling the API.
+**Notes:** 
+* This shortcut uses the [https://maclookup.app](https://maclookup.app) API to resolve AP vendor names based on the OUI portion of the BSSID. No BSSID or other information is being shared when calling the API.
+* Band information is not directly available from the "Get Network Details" action, so the shortcut uses some heuristics to determine the band based on channel number and Wi-Fi generation (Wi-Fi 4, 5, or 6). If the shortcut cannot determine the band, a "-" is displayed instead.
+* Signal quality ratings are based on SNR as follows:
+
+  Signal Quality | SNR
+  --- | ---
+  Excellent | SNR > 40 dB
+  Good | SNR is between 26 and 40 dB
+  Fair | SNR is between 16 and 25 dB
+  Poor | SNR is between 11 and 15 dB
+  Very Poor | SNR <= 10 dB 
 
 ### My Cellular
 
