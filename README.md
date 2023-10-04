@@ -37,13 +37,13 @@ This is a shortcut that generates a report of your Wi-Fi connection. It includes
 * Band information is not directly available from the "Get Network Details" action, so the shortcut uses some heuristics to determine the band based on channel number and Wi-Fi generation (Wi-Fi 4, 5, or 6). If the shortcut cannot determine the band, a "-" is displayed instead.
 * Signal quality ratings are based on SNR as follows:
 
-  Signal Quality | SNR
+  SNR | Signal Quality
   --- | ---
-  Excellent | SNR > 40 dB
-  Good | SNR is between 26 and 40 dB
-  Fair | SNR is between 16 and 25 dB
-  Poor | SNR is between 11 and 15 dB
-  Very Poor | SNR <= 10 dB 
+  Greater than 40 dB   | Excellent
+  Between 26 and 40 dB | Good
+  Between 16 and 25 dB | Fair
+  Between 11 and 15 dB | Poor
+  Less than 11 dB      | Very Poor 
 
 ### My Cellular
 
