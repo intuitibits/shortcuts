@@ -9,8 +9,10 @@ In iOS 17, Apple added options to retrieve details about your Wi-Fi and cellular
 ## Install
 
 1. Download and open the shortcut.
-2. Choose "+ Add Shortcut" to add the shortcut to your Shortcuts app.
-3. [Add the shortcut to your home screen for easy access](https://support.apple.com/guide/shortcuts/add-a-shortcut-to-the-home-screen-apd735880972/ios).
+   - [My Wi-Fi](https://github.com/intuitibits/shortcuts/raw/refs/heads/main/My%20Wi-Fi.shortcut)
+   - [My Cellular](https://github.com/intuitibits/shortcuts/raw/refs/heads/main/My%20Cellular.shortcut)
+3. Choose "+ Add Shortcut" to add the shortcut to your Shortcuts app.
+4. [Add the shortcut to your home screen for easy access](https://support.apple.com/guide/shortcuts/add-a-shortcut-to-the-home-screen-apd735880972/ios).
 
 ## Shortcuts
 ### My Wi-Fi
