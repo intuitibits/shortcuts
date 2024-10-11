@@ -36,7 +36,7 @@ This is a shortcut that generates a report of your Wi-Fi connection. It includes
 
 **Notes:** 
 * This shortcut uses the [https://maclookup.app](https://maclookup.app) API to resolve AP vendor names based on the OUI portion of the BSSID. No BSSID or other information is being shared when calling the API.
-* Band information is not directly available from the "Get Network Details" action, so the shortcut uses some heuristics to determine the band based on channel number and Wi-Fi generation (Wi-Fi 4, 5, or 6). If the shortcut cannot determine the band, a "-" is displayed instead.
+* Band information is not directly available from the "Get Network Details" action, so the shortcut uses some heuristics to determine the band based on channel number and Wi-Fi generation (Wi-Fi 4, 5, 6, or 7). If the shortcut cannot determine the band, a "-" is displayed instead.
 * Signal quality ratings are based on SNR as follows:
 
   SNR | Signal Quality
