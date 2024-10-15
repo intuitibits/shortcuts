@@ -1,10 +1,10 @@
 # Shortcuts
 
-In iOS 17, Apple added options to retrieve details about your Wi-Fi and cellular connections via the "Get Network Details" action. We've created a few shortcuts that can be used to access your Wi-Fi and cellular connection details on your iPhone/iPad.
+Shortcuts that generate a clean, well-formatted report of your iPhone/iPad's Wi-Fi and cellular connection details.
 
 ## Requirements
 
-* iOS 17 or higher.
+* iOS 18 or higher.
 
 ## Install
 
@@ -36,7 +36,6 @@ This is a shortcut that generates a report of your Wi-Fi connection. It includes
 
 **Notes:** 
 * This shortcut uses the [https://maclookup.app](https://maclookup.app) API to resolve AP vendor names based on the OUI portion of the BSSID. No BSSID or other information is being shared when calling the API.
-* Band information is not directly available from the "Get Network Details" action, so the shortcut uses some heuristics to determine the band based on channel number and Wi-Fi generation (Wi-Fi 4, 5, 6, or 7). If the shortcut cannot determine the band, a "-" is displayed instead.
 * Signal quality ratings are based on SNR as follows:
 
   SNR | Signal Quality
@@ -58,3 +57,16 @@ This is a shortcut that generates a report of your cellular connection. It inclu
 * Is Roaming Abroad?
 * Device Details (Model and iOS version)
 * Shortcut Version
+
+## FAQ
+
+### These shortcuts won't run on my iPhone/iPad running iOS 17. Why?
+
+Shortcuts made in iOS 18 are incompatible with iOS 17. For those on iOS 17, an older version of the shortcuts can be downloaded here:
+
+* [My Wi-Fi](https://github.com/intuitibits/shortcuts/raw/e69fce8632fbfa1217ba79868abd0cffbac86582/My%20Wi-Fi.shortcut) (Legacy)
+* [My Cellular](https://github.com/intuitibits/shortcuts/raw/e69fce8632fbfa1217ba79868abd0cffbac86582/My%20Cellular.shortcut) (Legacy)
+
+### The "My Wi-Fi" shortcut displays "-" for band. Why?
+
+Band information is not directly available from the "Get Network Details" action, so the shortcut uses some heuristics to determine the band based on channel number and Wi-Fi generation (Wi-Fi 4, 5, 6, or 7). If the shortcut cannot determine the band, a "-" is displayed instead.
